@@ -1,3 +1,3 @@
 FROM traefik
 
-RUN apk update && apk add git && apk add openssh-client
+RUN apk update && apk add git openssh-client bash
