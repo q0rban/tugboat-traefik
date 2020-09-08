@@ -1,3 +1,7 @@
 FROM traefik
 
-RUN apk update && apk add git openssh-client bash
+USER root
+
+RUN apk update && apk add git openssh-client bash runit
+
+CMD ["/sbin/runsvdir", "-P", "/etc/service"]
