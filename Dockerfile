@@ -1,4 +1,3 @@
-FROM tugboatqa/someimage:sometag
+FROM traefik
 
-RUN path/to/command1 \
-  && path/to/command2
+RUN apk update && apk add git
